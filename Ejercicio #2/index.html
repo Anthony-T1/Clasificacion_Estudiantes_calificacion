@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clasificación de estudiantes por calificación</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body onload="fnInicializar()">
+    <div class="flexbox">
+      <header class="header">
+        <h1>Clasificación de estudiantes por calificación</h1>
+      </header>
+      <main class="main">
+        <div class="main-container">
+          <div class="item">
+            <h2>Excelente</h2>
+            <ul id="nav_list_Excelente"></ul>
+          </div>
+          <div class="item">
+            <h2>Bueno</h2>
+            <ul id="nav_list_Bueno"></ul>
+          </div>
+          <div class="item">
+            <h2>Regular</h2>
+            <ul id="nav_list_Regular"></ul>
+          </div>
+          <div class="item">
+            <h2>Necesita Mejorar</h2>
+            <ul id="nav_list_NecesitaMejorar"></ul>
+          </div>
+          <div class="item">
+            <h2>Nota Promedio</h2>
+            <ul id="nav_list_NotaPromedio"></ul>
+          </div>
+        </div>
+        <div class="main_controls">
+          <input
+            type="button"
+            value="Reset"
+            id="btnReset"
+            onclick="fnReset();"
+          />
+        </div>
+      </main>
+    </div>
+    <script type="text/javascript" src="./JS/script.js"></script>
+  </body>
+</html>
